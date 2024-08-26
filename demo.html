@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <script href="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
+   <style>
+    /* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #060c21;
+    list-style: none;
+
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.section{
+    box-shadow: 0 0 25px #e95b9b, 0 0 50px #d8709f;
+    margin: 3%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    /* position: fixed; */
+    background-color: #333;
+}
+.header .logo{
+    color: rgb(231, 105, 147);
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.navbar a {
+    /* color: #fff; */
+    color: rgb(231, 105, 147);
+    margin-right: 20px;
+    /* float: right; */
+    display: inline;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    background: #d8709f;
+    color: #060c21;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 25px #e95b9b, 0 0 50px #d8709f;
+}
+
+.home-content {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+.logo-discription {
+    border-radius: 10px;
+    /* width: 35%; */
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo-discription a {
+    padding: 2% 6%;
+    background: #d8709f;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #060c21;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.logo-discription a:hover{
+    box-shadow: 0 0 15px #e95b9b, 0 0 25px #d8709f, 0 0 25px #da89ae;
+    transform: translateY(-5px);
+}
+.logo-discription h2{
+    font-weight: bold;
+}
+.logo-discription h2 span{
+    color: #e95b9b;
+}
+.logo-discription p span{
+    color: #e95b9b;
+    font-weight: bold;
+}
+
+.home-content img {
+    max-width: 50%;
+    border-radius: 30px;
+}
+
+
+.about-content {
+    align-items: center;
+    text-align: left;
+}
+
+.about-content img {
+    width: 50%;
+    border-radius: 15%;
+}
+.about-me h2{
+    font-weight: bold;
+}
+.about-me h2 span{
+    color: #e95b9b;
+}
+
+.about-me a{
+    padding: 2% 6%;
+    background: #d8709f;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #060c21;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    /* margin-right: 5%; */
+}
+.about-me a:hover{
+    box-shadow: 0 0 25px #e95b9b, 0 0 50px #d8709f;
+
+}
+.sikil-section{
+    box-shadow: 0 0 25px #e95b9b, 0 0 50px #d8709f;
+}
+.skils-content{
+    align-items: center;
+    justify-content:center;
+    margin: 5% auto;
+}
+
+.skils{
+    width: 40%;
+    height: fit-content;
+    margin: 2% auto;
+    padding: 3%;
+    box-shadow: -1px 0  #d8709f;
+}
+.skils li{
+    padding: 15px;
+}
+.bar{
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #333, 0 0 20px  #060c21;
+}
+.bar span{
+    border-radius: 8px;
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgb(224, 136, 187)0%, rgb(207, 112, 167)100%);
+}
+.html{
+    width: 85%;
+}
+.javascript{
+    width: 60%;
+}
+.css{
+    width: 78%;
+}
+
+.skils a{
+    padding: 2% 6%;
+    background: #da89ae;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #060c21;
+    font-weight: bold;
+    float: right;
+    transition: all 0.2s ease;
+}
+.skils a:hover{
+    box-shadow: 0 0 25px #e95b9b, 0 0 50px #d8709f;
+    transform: translateY(5px);
+}
+.creativity{
+    width: 90%;
+}
+.problem-solving{
+    width: 85%;
+}
+.teamwork{
+    width: 75%;
+}
+.project-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 2px 2px 20px #d8709f;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.project-section img {
+    max-width: 50%;
+    border-radius: 20px;
+    margin: 2%;
+    box-shadow:  0 0 25px  #d8709f;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 20px;
+        /* background-color: #555; */
+        
+}
+
+form input,
+form textarea {
+    width: calc(100% - 8%);
+    padding: 8px;
+    margin-bottom: 8%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e95b9b, 0 0 20px  #d8709f;
+}
+
+form button {
+    width: 95%;
+    padding: 1.5%;
+    background: linear-gradient(135deg, rgb(224, 136, 187)0%, rgb(207, 112, 167)100%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px #333, 0 0 10px #060c21;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+   </style>
+  <script>
+    // Optional: Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get form values
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // For demonstration purposes, just log the values to console
+      console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+      // Clear form fields
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+
+      // You can add further processing here, such as sending the data to a server
+    });
+
+  </script>
+</head>
+
+<body>
+
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+
+      <!-- <p class="subtitle">Web Developer</p> -->
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <h2> Logo</h2>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skils">skils</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- home section -->
+  <section id="home" class="section mb-sm-3">
+    <div class="container ">
+      <div class=" home-content d-sm-flex">
+        <img src="https://i.pinimg.com/originals/f9/30/5f/f9305f87be41e2dcf7a332fee60efdf0.jpg" class="img-fluid m-sm-1">
+        <div class="logo-discription">
+          <h2> Hello, I am <span class="fs-1"> Name</span> <br>Welcome to my portfolio.</h2>
+          <p class="mb-5">I am name a creative <span>web-designer, web-developer</span> with a passion for creating
+            beautifull responsive
+            and user-friendly websites.
+          </p>
+          <a href="#">explore more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="fw-bold">ABOUT ME</h2>
+      <div class="about-content d-sm-flex">
+        <img src="https://i.pinimg.com/originals/f9/30/5f/f9305f87be41e2dcf7a332fee60efdf0.jpg" class="img-fluid m-sm-4">
+        <div class="about-me px-sm-5">
+          <h2>  Hello, I am <span>Your Name </span> <br> <span>web-designer</span></h2>
+          <p class="mb-5"> welcome to my portfolio I am name a creative web-designer, web-developer with a passion for
+            creating responsive and user-friendly websites. I have worked on a vority of web-projects studio-management system,
+            age-calculator ...</p>
+          <a href="#" class="me-4 ">explore more</a>
+          <a href="#">download cv</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skils section -->
+  <section id="skils" class="section">
+    <div class="container">
+      <h2 class="fw-bold ">MY SKILS</h2>
+      <div class="sikil-section">
+        <div class="skils-content d-flex ">
+          <div class="skils text-sm-start">
+            <h1>Technical skils</h1>
+            <li>
+              <h4>html</h4>
+              <span class="bar"><span class="html"></span>
+            </li>
+            <li>
+              <h4>css</h4>
+              <span class="bar"><span class="css"></span>
+            </li>
+            <li>
+              <h4>javascript</h4>
+              <span class="bar"><span class="javascript"></span>
+            </li>
+            <li class="mb-5">
+              <h4>php</h4>
+              <span class="bar"><span class="c++ w-50"></span>
+            </li>
+            <a href="#">more ...</a>
+          </div>
+
+          <div class="skils text-sm-start ">
+            <h1>Profectional skils</h1>
+            <li>
+              <h4>creativity</h4>
+              <span class="bar"><span class="creativity"> </span>
+            </li>
+            <li>
+              <h4>problem-solving</h4>
+              <span class="bar"><span class="problem-solving"> </span>
+            </li>
+            <li class="mb-5">
+              <h4>teamwork</h4>
+              <span class="bar"><span class="teamwork"> </span>
+            </li>
+            <a href="#">more ...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="fw-bold">PROJECTS</h2>
+      <div class="project-section mt-5 ">
+        <h3>project-1</h3>
+        <img src="/image/project.png" alt="Project 1">
+        <p> By the age calculator user can calculate their age with few click </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section ">
+    <div class="container">
+      <h2 class="mb-5 fw-bold">CONTECT ME</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Form Submission -->
+  <script src="script.js"></script>
+</body>
+
+</html>
